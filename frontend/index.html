@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/zombie.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zombie Survival</title>
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="ui-layer">
+        <div id="health-bar">
+          <div id="health-fill"></div>
+        </div>
+        <div id="ammo-counter">30</div>
+        <div id="score">Score: 0</div>
+      </div>
+      <canvas id="game-canvas"></canvas>
+      <div id="start-screen">
+        <h1>ZOMBIE SURVIVAL</h1>
+        <button id="start-button">START GAME</button>
+      </div>
+      <div id="game-over-screen" class="hidden">
+        <h1>GAME OVER</h1>
+        <p>Your score: <span id="final-score">0</span></p>
+        <button id="restart-button">PLAY AGAIN</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
